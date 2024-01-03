@@ -85,7 +85,7 @@ main {
 }
 
 .btn {
-  margin: auto;
+  margin: 5px;
   display: block;
   cursor: pointer;
   padding: 0.8em 1.4em;
