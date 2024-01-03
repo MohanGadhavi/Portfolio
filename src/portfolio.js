@@ -1,12 +1,9 @@
 const header = {
-    // all the properties are optional - can be left empty or deleted
-    // homepage: 'https://rajshekhar26.github.io/cleanfolio',
     homepage: 'index.html',
     title: 'Portfolio',
   }
   
   const about = {
-    // all the properties are optional - can be left empty or deleted
     name: 'Mohan Gadhavi',
     role: 'Front End Developer',
     description:
@@ -19,8 +16,6 @@ const header = {
   }
   
   const projects = [
-    // projects can be added an removed
-    // if there are no projects, Projects section won't show up
     {
       name: 'Task-Meta App',
       description:
@@ -72,8 +67,6 @@ const header = {
   ]
   
   const skills = [
-    // skills can be added or removed
-    // if there are no skills, Skills section won't show up
     'HTML',
     'CSS',
     'JavaScript',
@@ -87,7 +80,6 @@ const header = {
   ]
   
   const contact = {
-    // email is optional - if left empty Contact section won't show up
     email: 'gadhavimohan71@mail.com',
   }
   
