@@ -8,7 +8,7 @@ const header = {
     role: 'Front End Developer',
     description:
       'Passionate frontend developer skilled in HTML, CSS, JavaScript, React, and design principles, merging technical expertise with a graphic design background for compelling and seamless web experiences.',
-    resume: './src/assets/resume.pdf',
+    resume: './resume.pdf',
     social: {
       linkedin: 'https://www.linkedin.com/in/mohangadhavi31/',
       github: 'https://github.com/MohanGadhavi',
