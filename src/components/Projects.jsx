@@ -38,15 +38,15 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {projects.map((project, index) => (
             <motion.div
-              key={index}
+              key={project.title}
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -5 }}
-              className="bg-white hover:bg-gray-800 dark:bg-white/5 rounded-2xl overflow-hidden border border-slate-300 hover:border-slate-400 dark:border-white/10 transition-all ease-in-out duration-1000 group shadow-sm hover:shadow-xl group"
+              className="bg-white hover:bg-gray-800 dark:bg-white/5 rounded-2xl overflow-hidden border border-slate-300 hover:border-slate-400 dark:border-white/10 transition-colors duration-300 group shadow-sm hover:shadow-xl"
             >
-              <div className="h-48 bg-gray-200 group-hover:bg-gray-300 dark:bg-white/10 dark:group-hover:bg-accent/5 flex items-center justify-center p-4 transition-colors duration-1000">
+              <div className="h-48 bg-gray-200 group-hover:bg-gray-300 dark:bg-white/10 dark:group-hover:bg-accent/5 flex items-center justify-center p-4 transition-colors duration-300">
                 <div className="text-4xl font-bold text-gray-400 dark:text-white/20 group-hover:text-accent transition-colors">
                   {project.title.substring(0, 2)}
                 </div>

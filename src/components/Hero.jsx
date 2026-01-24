@@ -7,13 +7,13 @@ const Hero = ({ personalInfo }) => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col pt-32 bg-white dark:bg-black text-white transition-colors duration-300 overflow-hidden relative"
+      className=" min-h-[85vh] md:min-h-screen flex flex-col pt-32 bg-white dark:bg-black text-white transition-colors duration-300 relative"
     >
       {/* Background Glow */}
       <div className="absolute top-1/4 right-[-10em] w-[500px] h-[500px] bg-accent/30 dark:bg-accent/20 rounded-full blur-[150px] pointer-events-none" />
       <div className="absolute top-[-5em] left-[-15em] w-[500px] h-[500px] bg-accent/20 dark:bg-accent/15 rounded-full blur-[150px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center flex-1">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         {/* Large Name Headline */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -46,9 +46,16 @@ const Hero = ({ personalInfo }) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="max-w-4xl text-center mt-10 md:mt-24 px-2 md:p-0 scroll-mt-32"
+          className="max-w-4xl text-center mt-10 md:mt-24 scroll-mt-32"
         >
           <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium">
+            I design and develop end-to-end web solutions focused on performance
+            and scalability.
+          </p>
+          {/* <p className="text-base md:text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium italic">
+            Currently working as a Full Stack Developer at Digital MetaWork.
+          </p> */}
+          {/* <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-medium">
             Welcome to my portfolio! I'm{" "}
             <span className="text-gray-800 dark:text-gray-400 font-bold capitalize">
               {personalInfo.firstName}
@@ -56,7 +63,7 @@ const Hero = ({ personalInfo }) => {
             , a dedicated {personalInfo.role.toLowerCase()} from India with a
             passion for crafting visually stunning, functional websites that
             deliver exceptional user experiences.
-          </p>
+          </p> */}
 
           <div className="flex flex-col items-center gap-6">
             <a

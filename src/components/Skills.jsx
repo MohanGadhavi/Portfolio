@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const skillsData = [
@@ -61,7 +60,7 @@ const Skills = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white hover:bg-gray-800 dark:bg-white/5 p-6 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10  transition-all ease-in-out duration-1000 group h-full flex flex-col shadow-sm hover:shadow-md"
+              className="bg-white hover:bg-gray-800 dark:bg-white/5 p-6 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10 transition-colors duration-300 group h-full flex flex-col shadow-sm hover:shadow-md"
             >
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4 border-b border-gray-200 dark:border-white/10 pb-2 group-hover:text-accent transition-colors">
                 {skillGroup.category}

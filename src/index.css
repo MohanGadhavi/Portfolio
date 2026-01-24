@@ -6,6 +6,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-display: swap;
+}
+
 @layer base {
   :root {
     /* Charcoal Black #1a1a1a -> 26 26 26 */
