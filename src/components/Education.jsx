@@ -1,0 +1,116 @@
+import React from "react";
+import { motion } from "framer-motion";
+import { GraduationCap, Award } from "lucide-react";
+
+const Education = () => {
+  return (
+    <section className="py-24 bg-gray-50 dark:bg-black transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10 md:mb-16"
+        >
+          Education & <span className="text-accent">Achievements</span>
+        </motion.h2>
+
+        <div className="grid md:grid-cols-2 gap-12 items-stretch">
+          {/* Education Column */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col h-full"
+          >
+            <div className="flex items-center gap-3 mb-4 md:mb-8 justify-start">
+              <GraduationCap className="text-accent" size={28} />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Education
+              </h3>
+            </div>
+
+            <div className="space-y-6 flex-1">
+              <div className="bg-white hover:bg-gray-800 dark:bg-white/5 p-8 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10 shadow-sm hover:shadow-md transition-all ease-in-out duration-1000 h-[calc(50%-12px)] flex flex-col justify-center group">
+                <div className="flex justify-between items-start mb-2">
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900 group-hover:text-gray-200 dark:text-white">
+                      Master of Computer Applications
+                    </h4>
+                    <p className="text-accent font-medium text-sm">
+                      Ganpat University (GUNI), India
+                    </p>
+                  </div>
+                  <span className="text-gray-500 group-hover:text-gray-400 dark:text-gray-400 text-xs">
+                    2025
+                  </span>
+                </div>
+                <p className="text-gray-600 group-hover:text-gray-400 dark:text-gray-400 text-xs mt-2 font-medium">
+                  CGPA: 7.88
+                </p>
+              </div>
+
+              <div className="bg-white hover:bg-gray-800 dark:bg-white/5 p-8 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10 shadow-sm hover:shadow-md transition-all ease-in-out duration-1000 h-[calc(50%-12px)] flex flex-col justify-center group">
+                <div className="flex justify-between items-start mb-2">
+                  <div>
+                    <h4 className="text-lg font-bold text-gray-900 group-hover:text-gray-200 dark:text-white">
+                      B.Sc. in Information Technology
+                    </h4>
+                    <p className="text-accent font-medium text-sm">
+                      University of Mumbai, India
+                    </p>
+                  </div>
+                  <span className="text-gray-500 group-hover:text-gray-400 dark:text-gray-400 text-xs">
+                    2023
+                  </span>
+                </div>
+                <p className="text-gray-600 group-hover:text-gray-400 dark:text-gray-400 text-xs mt-2 font-medium">
+                  CGPA: 7.73
+                </p>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Achievements Column */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex flex-col h-full"
+          >
+            <div className="flex items-center gap-3 mb-4 md:mb-8 justify-start">
+              <Award className="text-accent" size={28} />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Achievements
+              </h3>
+            </div>
+
+            <div className="space-y-6 flex-1">
+              <div className="bg-white hover:bg-gray-800 dark:bg-white/5 p-8 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10 hover:border-accent/50 transition-all ease-in-out duration-1000 shadow-sm hover:shadow-md h-[calc(50%-12px)] flex flex-col justify-center group">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-gray-200 dark:text-white mb-2">
+                  Winner - SYM2025 Hackathon
+                </h4>
+                <p className="text-gray-600 group-hover:text-gray-400 dark:text-gray-400 text-sm leading-relaxed">
+                  Recognized for rapid problem-solving, teamwork, and end-to-end
+                  development of innovative solutions.
+                </p>
+              </div>
+
+              <div className="bg-white hover:bg-gray-800 dark:bg-white/5 p-8 rounded-2xl border border-slate-300 hover:border-slate-400 dark:border-white/10 hover:border-accent/50 transition-all ease-in-out duration-1000 shadow-sm hover:shadow-md h-[calc(50%-12px)] flex flex-col justify-center group">
+                <h4 className="text-lg font-bold text-gray-900 group-hover:text-gray-200 dark:text-white mb-2">
+                  Certified Graphic Design Intern
+                </h4>
+                <p className="text-gray-600 group-hover:text-gray-400 dark:text-gray-400 text-sm leading-relaxed">
+                  Elixir Digital Media - Gained practical experience in visual
+                  communication and design principles.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Education;

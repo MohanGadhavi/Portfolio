@@ -1,0 +1,63 @@
+{
+  "personalInfo": {
+    "firstName": "MOHAN",
+    "lastName": "GADHAVI",
+    "role": "Full Stack Developer",
+    "location": "India",
+    "summary": "Full Stack Developer specializing in React.js, Next.js, and Node.js. Turning ideas into pixel-perfect, scalable web applications.",
+    "hashtags": [
+      "FULLSTACK",
+      "REACTJS",
+      "NEXTJS",
+      "NODEJS",
+      "TYPESCRIPT",
+      "SQL"
+    ]
+  },
+  "skills": {
+    "Frontend": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
+    "Backend": ["Node.js", "PostgreSQL", "Python"],
+    "Tools": ["Figma", "Git", "Docker"]
+  },
+  "experience": [
+    {
+      "company": "Tech Solutions",
+      "position": "Senior Developer",
+      "period": "2022 - Present",
+      "description": "Leading the frontend development of a high-traffic e-commerce platform."
+    },
+    {
+      "company": "Creative Agency",
+      "position": "Full Stack Developer",
+      "period": "2020 - 2022",
+      "description": "Developed several client websites using React and Node.js."
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-commerce Platform",
+      "description": "A full-featured online store built with React and Stripe.",
+      "technologies": ["React", "Stripe", "Tailwind"],
+      "link": "https://example.com"
+    },
+    {
+      "title": "Task Management App",
+      "description": "A productivity tool for teams to collaborate.",
+      "technologies": ["Next.js", "Prisma", "PostgreSQL"],
+      "link": "https://example.com"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Computer Application",
+      "institution": "Technical University",
+      "year": "2020"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "Best Developer Award",
+      "description": "Recognized for exceptional contribution to the project."
+    }
+  ]
+}
