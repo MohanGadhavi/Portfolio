@@ -56,6 +56,7 @@ const Projects = () => {
                   {project.github && project.github.length > 0 && (
                     <a
                       href={project.github}
+                      target="_blank"
                       className="min-w-8 h-8 group-hover:px-3 flex items-center justify-center gap-1 text-sm outline outline-2 dark:outline-1 outline-accent/80 rounded-full text-white hover:text-accent bg-gray-800/60 dark:bg-white/20 transition-all duration-500"
                     >
                       <Github size={18} />{" "}
@@ -67,6 +68,7 @@ const Projects = () => {
                   {project.preview && project.preview.length > 0 && (
                     <a
                       href={project.preview}
+                      target="_blank"
                       className="min-w-8 h-8 group-hover:px-3 flex items-center justify-center gap-1 text-sm outline outline-2 dark:outline-1 outline-accent/80 rounded-full text-white hover:text-accent bg-gray-800/60 dark:bg-white/20 transition-all duration-500"
                     >
                       <ExternalLink size={18} />

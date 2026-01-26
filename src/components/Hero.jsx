@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
-import { ArrowRight, Download, MousePointerClick } from "lucide-react";
+import { FileBadge, MessageSquareShare, SendHorizonal } from "lucide-react";
 import TestimonialBar from "./TestimonialBar";
 import HashtagAnimation from "./HashtagAnimation";
 import portfolioData from "../data/portfolio.json";
@@ -50,19 +50,19 @@ const Hero = () => {
             {portfolioData.summary}
           </p>
           <div className="flex flex-col items-center gap-6">
-            <div className="flex flex-wrap justify-center gap-4">
+            <div className="w-full md:w-auto px-4 md:px-0 flex flex-col md:flex-row flex-wrap justify-center gap-4">
               <a
                 href={`mailto:${portfolioData.contact.email}`}
-                className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl bg-accent text-gray-900 dark:text-black font-bold text-base md:text-lg transition-all duration-200 hover:bg-accent/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgb(var(--accent)/0.3)]"
+                className="inline-flex items-center justify-between md:justify-normal gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl bg-accent text-gray-900 dark:text-black font-bold text-base md:text-lg transition-all duration-200 hover:bg-accent/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgb(var(--accent)/0.3)]"
               >
-                Email me <ArrowRight size={20} />
+                Email me <MessageSquareShare size={20} />
               </a>
               <a
                 href="/MohanGadhavi.pdf"
                 download
-                className="inline-flex items-center gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl border border-accent bg-gray-800 dark:bg-transparent text-accent font-bold text-base md:text-lg transition-all duration-200 hover:bg-gray-700 dark:hover:bg-accent/10 hover:scale-105 active:scale-95"
+                className="inline-flex items-center justify-between md:justify-normal gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl border border-accent bg-gray-800 dark:bg-transparent text-accent font-bold text-base md:text-lg transition-all duration-200 hover:bg-gray-700 dark:hover:bg-accent/10 hover:scale-105 active:scale-95"
               >
-                Download Resume <Download size={20} />
+                View Resume <FileBadge size={20} />
               </a>
             </div>
 

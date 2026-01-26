@@ -34,7 +34,7 @@ const Header = () => {
             {/* <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
               <span className="text-black font-bold text-xs">MG</span>
             </div> */}
-            <h1 className="text-2xl font-bold text-black dark:text-white tracking-tight cursor-pointer">
+            <h1 className="ml-2 text-2xl font-bold text-black dark:text-white tracking-tight cursor-pointer">
               MG<span className="text-accent">.</span>
             </h1>
           </div>
