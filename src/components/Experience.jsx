@@ -1,32 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Briefcase } from "lucide-react";
-
-const experiences = [
-  {
-    role: "Full Stack Developer",
-    company: "Digital Meta Works",
-    period: "June 2024 - Present",
-    description: [
-      "Built end-to-end features for a multi-organization document management platform using React.js, Node.js, and Express.js.",
-      "Developed dynamic forms and RESTful APIs for document processing, validation, and secure file handling.",
-      "Implemented Excel generation, file uploads/downloads, and optimized performance with lazy loading and memoization.",
-      "Refactored code into scalable, reusable components and services.",
-      "Used AI-assisted development (vibe coding) to deliver features up to 10× faster while maintaining security and code quality.",
-    ],
-  },
-  {
-    role: "Frontend Intern",
-    company: "Meliorate Technology Private Limited",
-    period: "Dec 2023 - May 24",
-    description: [
-      "Developed responsive UI components using React.js, JavaScript, and Tailwind CSS.",
-      "Integrated REST APIs to enable dynamic data rendering across application modules.",
-      "Improved UI performance and maintainability through component reuse and code optimization.",
-      "Worked closely with designers and backend developers to deliver production-ready features.",
-    ],
-  },
-];
+import portfolioData from "../data/portfolio.json";
 
 const Experience = () => {
   return (
@@ -45,7 +20,7 @@ const Experience = () => {
         </motion.h2>
 
         <div className="space-y-6 md:space-y-12">
-          {experiences.map((exp, index) => (
+          {portfolioData.experience.map((exp, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
@@ -62,7 +37,7 @@ const Experience = () => {
                     <div className="w-4 h-4 rounded-full bg-accent z-10 ring-4 ring-gray-600 dark:ring-gray-800 shrink-0" />
                     <div
                       className={`w-0.5 bg-gray-600 dark:bg-gray-800 ${
-                        index === experiences?.length - 1
+                        index === portfolioData.experience?.length - 1
                           ? " min-h-[calc(90%-2.2rem)] "
                           : "  min-h-[110%] "
                       } `}

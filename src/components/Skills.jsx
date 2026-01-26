@@ -1,40 +1,5 @@
 import { motion } from "framer-motion";
-
-const skillsData = [
-  {
-    category: "Frontend",
-    items: [
-      "React.js",
-      "Next.js",
-      "TypeScript",
-      "JavaScript (ES6+)",
-      "Redux Toolkit",
-      "Tailwind CSS",
-      "Material UI",
-      "shadcn/ui",
-      "HTML5/CSS3",
-    ],
-  },
-  {
-    category: "Backend",
-    items: [
-      "Node.js",
-      "Express.js",
-      "RESTful APIs",
-      "Redis",
-      "Swagger",
-      "Postman",
-    ],
-  },
-  {
-    category: "Databases",
-    items: ["MySQL", "MongoDB"],
-  },
-  {
-    category: "Cloud & Tools",
-    items: ["AWS EC2", "AWS S3", "Git", "GitHub", "Cursor IDE", "AI Tools"],
-  },
-];
+import portfolioData from "../data/portfolio.json";
 
 const Skills = () => {
   return (
@@ -53,7 +18,7 @@ const Skills = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 items-stretch">
-          {skillsData.map((skillGroup, index) => (
+          {portfolioData.skills.map((skillGroup, index) => (
             <motion.div
               key={skillGroup.category}
               initial={{ opacity: 0, y: 20 }}

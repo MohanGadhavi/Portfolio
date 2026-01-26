@@ -8,23 +8,64 @@
     "lastName": "GADHAVI",
     "location": "India"
   },
-  "skills": {
-    "Frontend": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
-    "Backend": ["Node.js", "PostgreSQL", "Python"],
-    "Tools": ["Figma", "Git", "Docker"]
-  },
-  "experience": [
+  "skills": [
     {
-      "company": "Tech Solutions",
-      "position": "Senior Developer",
-      "period": "2022 - Present",
-      "description": "Leading the frontend development of a high-traffic e-commerce platform."
+      "category": "Frontend",
+      "items": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "Redux Toolkit",
+        "Tailwind CSS",
+        "Material UI",
+        "shadcn/ui",
+        "HTML5/CSS3"
+      ]
     },
     {
-      "company": "Creative Agency",
-      "position": "Full Stack Developer",
-      "period": "2020 - 2022",
-      "description": "Developed several client websites using React and Node.js."
+      "category": "Backend",
+      "items": [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "Redis",
+        "Swagger",
+        "Postman"
+      ]
+    },
+    {
+      "category": "Databases",
+      "items": ["MySQL", "MongoDB"]
+    },
+    {
+      "category": "Cloud & Tools",
+      "items": ["AWS EC2", "AWS S3", "Git", "GitHub", "Cursor IDE", "AI Tools"]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Digital Meta Works",
+      "period": "June 2024 - Present",
+      "description": [
+        "Built end-to-end features for a multi-organization document management platform using React.js, Node.js, and Express.js.",
+        "Developed dynamic forms and RESTful APIs for document processing, validation, and secure file handling.",
+        "Implemented Excel generation, file uploads/downloads, and optimized performance with lazy loading and memoization.",
+        "Refactored code into scalable, reusable components and services.",
+        "Used AI-assisted development (vibe coding) to deliver features up to 10× faster while maintaining security and code quality."
+      ]
+    },
+    {
+      "role": "Frontend Intern",
+      "company": "Meliorate Technology Private Limited",
+      "period": "Dec 2023 - May 24",
+      "description": [
+        "Developed responsive UI components using React.js, JavaScript, and Tailwind CSS.",
+        "Integrated REST APIs to enable dynamic data rendering across application modules.",
+        "Improved UI performance and maintainability through component reuse and code optimization.",
+        "Worked closely with designers and backend developers to deliver production-ready features."
+      ]
     }
   ],
   "projects": [
