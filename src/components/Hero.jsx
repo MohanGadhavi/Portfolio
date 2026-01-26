@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className=" min-h-[85vh] md:min-h-screen flex flex-col pt-32 bg-gradient-to-tr from-accent/10 to-white dark:bg-none dark:bg-black text-white transition-colors duration-300 relative"
+      className=" min-h-[85dvh] md:min-h-dvh flex flex-col pt-32 bg-gradient-to-tr from-accent/10 to-white dark:bg-none dark:bg-black text-white transition-colors duration-300 relative"
     >
       {/* Background Glow */}
       <div className="hidden dark:block md:block absolute -z-0 -bottom-[10em] md:top-1/4 right-[-15em] md:right-[-10em] w-[500px] h-[500px] bg-accent/30 dark:bg-accent/20 rounded-full blur-[150px] pointer-events-none" />
