@@ -58,7 +58,7 @@ const Hero = () => {
                 Email me <MessageSquareShare size={20} />
               </a>
               <a
-                href="/MohanGadhavi.pdf"
+                href="/Mohan_Gadhavi.pdf"
                 download
                 className="inline-flex items-center justify-between md:justify-normal gap-2 px-4 md:px-6 py-2 md:py-3 rounded-xl border border-accent bg-gray-800 dark:bg-transparent text-accent font-bold text-base md:text-lg transition-all duration-200 hover:bg-gray-700 dark:hover:bg-accent/10 hover:scale-105 active:scale-95"
               >
