@@ -31,11 +31,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
+            {/* <div className="w-8 h-8 rounded-full bg-accent flex items-center justify-center">
               <span className="text-black font-bold text-xs">MG</span>
-            </div>
-            <h1 className="text-xl font-bold text-black dark:text-white tracking-tight cursor-pointer">
-              Portfolio
+            </div> */}
+            <h1 className="text-2xl font-bold text-black dark:text-white tracking-tight cursor-pointer">
+              MG<span className="text-accent">.</span>
             </h1>
           </div>
 

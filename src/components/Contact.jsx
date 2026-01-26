@@ -8,12 +8,13 @@ import {
   MapPin,
   ArrowRight,
 } from "lucide-react";
+import portfolioData from "../data/portfolio.json";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-12 md:py-20 bg-white dark:bg-black transition-colors duration-300 relative overflow-hidden"
+      className="py-10 md:py-20 bg-white dark:bg-black transition-colors duration-300 relative "
     >
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none opacity-50 dark:opacity-20">
@@ -26,7 +27,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-10 md:mb-16"
+          className="text-2xl md:text-4xl font-bold text-center text-gray-900 dark:text-white mb-6 md:mb-16"
         >
           Get In <span className="text-accent">Touch</span>
         </motion.h2>
@@ -48,58 +49,64 @@ const Contact = () => {
 
             <div className="space-y-6">
               <a
-                href="mailto:gadhavimohan71@gmail.com"
+                href={`mailto:${portfolioData.contact.email}`}
                 className="flex items-center gap-4 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors group"
               >
-                <div className="w-12 h-12 bg-slate-50 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10 group-hover:border-accent transition-colors">
+                <div className="w-12 h-12 bg-gray-800 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10 group-hover:scale-110 group-hover:border-accent transition-all">
                   <Mail className="text-accent" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-500">
                     Email
                   </p>
-                  <p className="font-medium">gadhavimohan71@gmail.com</p>
+                  <p className="font-medium">{portfolioData.contact.email}</p>
                 </div>
               </a>
 
               <a
-                href="tel:+919152336862"
+                href={`tel:+91${portfolioData.contact.phone}`}
                 className="flex items-center gap-4 text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors group"
               >
-                <div className="w-12 h-12 bg-slate-50 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10 group-hover:border-accent transition-colors">
+                <div className="w-12 h-12 bg-gray-800 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10 group-hover:scale-110 group-hover:border-accent transition-all">
                   <Phone className="text-accent" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-500">
                     Phone
                   </p>
-                  <p className="font-medium">+91 9152336862</p>
+                  <p className="font-medium">
+                    +91 {portfolioData.contact.phone}
+                  </p>
                 </div>
               </a>
 
               <div className="flex items-center gap-4 text-gray-600 dark:text-gray-300 group">
-                <div className="w-12 h-12 bg-slate-50 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10">
+                <div className="w-12 h-12 bg-gray-800 dark:bg-white/5 rounded-full flex items-center justify-center border border-slate-200 dark:border-white/10">
                   <MapPin className="text-accent" size={20} />
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-gray-500">
                     Location
                   </p>
-                  <p className="font-medium">Mumbai, India</p>
+                  <p className="font-medium">
+                    {portfolioData.contact.location}
+                  </p>
                 </div>
               </div>
             </div>
 
             <div className="flex gap-4 mt-10">
               <a
-                href="#"
+                href={portfolioData.contact.linkedin}
                 className="w-10 h-10 rounded-full bg-blue-500 dark:bg-blue-500/20 flex items-center justify-center text-white dark:text-blue-500 hover:bg-blue-600 hover:text-white dark:hover:text-white dark:hover:bg-blue-500 transition-all"
+                target="_blank"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href={portfolioData.contact.github}
                 className="w-10 h-10 rounded-full bg-gray-800 dark:bg-white/20 flex items-center justify-center text-white dark:text-white hover:bg-black hover:text-white dark:hover:text-white dark:hover:bg-gray-500 transition-all"
+                target="_blank"
               >
                 <Github size={20} />
               </a>
@@ -111,41 +118,41 @@ const Contact = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white dark:bg-white/5 p-8 rounded-3xl border border-slate-200 dark:border-white/10 shadow-lg"
+            className="bg-gray-800 dark:bg-white/5 p-8 rounded-3xl border border-slate-200 dark:border-white/10 shadow-lg"
             onSubmit={(e) => e.preventDefault()}
           >
             <div className="space-y-4">
               <div>
-                <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                <label className="block text-sm font-medium text-gray-200 dark:text-gray-400 mb-2">
                   Name
                 </label>
                 <input
                   type="text"
-                  className="w-full bg-slate-50 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+                  className="w-full bg-slate-100 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                   placeholder="Your Name"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                <label className="block text-sm font-medium text-gray-200 dark:text-gray-400 mb-2">
                   Email
                 </label>
                 <input
                   type="email"
-                  className="w-full bg-slate-50 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+                  className="w-full bg-slate-100 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                   placeholder="your@email.com"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-600 dark:text-gray-400 mb-2">
+                <label className="block text-sm font-medium text-gray-200 dark:text-gray-400 mb-2">
                   Message
                 </label>
                 <textarea
                   rows="4"
-                  className="w-full bg-slate-50 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
+                  className="w-full bg-slate-100 dark:bg-black border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition-all"
                   placeholder="Your message..."
                 ></textarea>
               </div>
-              <button className="w-full bg-black dark:bg-white text-white dark:text-black font-semibold py-4 rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+              <button className="w-full bg-accent/80 dark:bg-gray-200 text-black dark:text-black font-semibold py-4 rounded-xl hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
                 Send Message <ArrowRight size={18} />
               </button>
             </div>

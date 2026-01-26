@@ -1,18 +1,12 @@
 {
+  "role": "Full Stack Developer",
+  "summary": "I design and develop end-to-end web solutions that are fast, scalable, and built to perform in the real world.",
+  "quote": "LET'S BUILD SOMETHING EXTRAORDINARY",
+  "hashtags": ["REACTJS", "NEXTJS", "TYPESCRIPT", "NODEJS", "SQL", "MONGODB"],
   "personalInfo": {
     "firstName": "MOHAN",
     "lastName": "GADHAVI",
-    "role": "Full Stack Developer",
-    "location": "India",
-    "summary": "Full Stack Developer specializing in React.js, Next.js, and Node.js. Turning ideas into pixel-perfect, scalable web applications.",
-    "hashtags": [
-      "FULLSTACK",
-      "REACTJS",
-      "NEXTJS",
-      "NODEJS",
-      "TYPESCRIPT",
-      "SQL"
-    ]
+    "location": "India"
   },
   "skills": {
     "Frontend": ["React", "Next.js", "Tailwind CSS", "TypeScript"],
@@ -35,29 +29,54 @@
   ],
   "projects": [
     {
-      "title": "E-commerce Platform",
-      "description": "A full-featured online store built with React and Stripe.",
-      "technologies": ["React", "Stripe", "Tailwind"],
-      "link": "https://example.com"
+      "title": "Community Track",
+      "description": "Collaborative task and project management system designed to streamline team workflows and enhance productivity.",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "github": "https://github.com/MohanGadhavi/CommUnityTrack-ui",
+      "preview": ""
     },
     {
-      "title": "Task Management App",
-      "description": "A productivity tool for teams to collaborate.",
-      "technologies": ["Next.js", "Prisma", "PostgreSQL"],
-      "link": "https://example.com"
+      "title": "Aspiration Trail",
+      "description": "Interactive learning and growth platform fostering skill development through gamified pathways and mentorship.",
+      "tags": ["React", "Tailwind CSS", "Express"],
+      "github": "https://github.com/MohanGadhavi/aspirationtrail-ui",
+      "preview": ""
     }
   ],
   "education": [
     {
-      "degree": "Master of Computer Application",
-      "institution": "Technical University",
-      "year": "2020"
+      "degree": "Master of Computer Applications",
+      "institution": "Ganpat University (GUNI), India",
+      "year": "2025",
+      "cgpa": "7.88"
+    },
+    {
+      "degree": "B.Sc. in Information Technology",
+      "institution": "University of Mumbai, India",
+      "year": "2023",
+      "cgpa": "7.73"
     }
   ],
   "achievements": [
     {
-      "title": "Best Developer Award",
-      "description": "Recognized for exceptional contribution to the project."
+      "title": "Winner - SYM2024 Hackathon",
+      "description": "Recognized for rapid problem-solving, teamwork, and end-to-end development of innovative solutions."
+    },
+    {
+      "title": " Certified Graphic Design Intern",
+      "description": "Elixir Digital Media - Gained practical experience in visual communication and design principles."
     }
-  ]
+  ],
+  "contact": {
+    "email": "gadhavimohan71@gmail.com",
+    "phone": "9152336862",
+    "location": "Mumbai, India",
+    "linkedin": "https://www.linkedin.com/in/mohangadhavi31/",
+    "github": "https://github.com/mohangadhavi"
+  },
+  "theme": {
+    "primary": "#1a1a1a",
+    "secondary": "#f5f5f5",
+    "accent": "#FACC15"
+  }
 }

@@ -1,0 +1,36 @@
+<svg width="550" height="500" viewBox="0 0 120 48" xmlns="http://www.w3.org/2000/svg" aria-label="MG logo" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100..900);
+    .logo-text {
+      font-family: 'Outfit', sans-serif;
+      font-size: 75px;
+      font-weight: 800;
+      fill: white;
+    }
+  </style>
+  <!-- <circle cx="60" cy="25" r="52" fill="null"/> -->
+  <text x="-3" y="48" class="logo-text">M</text>
+  <text x="60" y="48" class="logo-text">G</text>
+  <circle cx="60" cy="65" r="10" fill="#f5c400"/>
+</svg>
+<!-- <svg width="550" height="500" viewBox="0 0 120 48" xmlns="http://www.w3.org/2000/svg" aria-label="MG logo" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <style>
+    @import url(https://fonts.googleapis.com/css2?family=Outfit:wght@100..900);
+    .logo-text{
+      font-family: 'Outfit', sans-serif;
+      fill: white;
+    }
+    .logo-text-1 {
+      font-weight: 800;
+            font-size: 70px;
+    }
+    .logo-text-2{
+      font-weight: 300;
+    font-size: 150px;
+    }
+  </style>
+  <circle cx="60" cy="25" r="52" fill="#000"/>
+  <text x="25" y="50" class="logo-text logo-text-1">M</text>
+  <text x="0" y="77" class="logo-text logo-text-2">G</text>
+  <circle cx="100" cy="10" r="6" fill="#f5c400"/>
+</svg> -->
