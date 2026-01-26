@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className=" min-h-[85dvh] md:min-h-dvh flex flex-col pt-32 bg-gradient-to-tr from-accent/10 to-white dark:bg-none dark:bg-black text-white transition-colors duration-300 relative"
+      className="h-[calc(100vh-6rem)] md:min-h-screen pt-32 flex flex-col bg-gradient-to-tr from-accent/10 to-white dark:bg-none dark:bg-black text-white transition-colors duration-300 relative"
     >
       {/* Background Glow */}
       <div className="hidden dark:block md:block absolute -z-0 -bottom-[10em] md:top-1/4 right-[-15em] md:right-[-10em] w-[500px] h-[500px] bg-accent/30 dark:bg-accent/20 rounded-full blur-[150px] pointer-events-none" />
@@ -49,7 +49,7 @@ const Hero = () => {
           <p className="text-lg md:text-2xl text-gray-800 dark:text-gray-200 leading-relaxed mb-10 font-medium">
             {portfolioData.summary}
           </p>
-          <div className="flex flex-col items-center gap-8 md:gap-6">
+          <div className="flex flex-col items-center gap-12 md:gap-6">
             <div className="w-full md:w-auto px-4 md:px-0 flex flex-col md:flex-row flex-wrap justify-center gap-4">
               <a
                 href={`mailto:${portfolioData.contact.email}`}
