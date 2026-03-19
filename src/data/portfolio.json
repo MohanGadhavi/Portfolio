@@ -1,26 +1,26 @@
 {
   "role": "Full Stack Developer",
-  "summary": "I design and develop end-to-end web solutions that are fast, scalable, and built to perform in the real world.",
+  "summary": "I craft high-performance web solutions that are fast, scalable, and built to thrive in the real world.",
   "quote": "LET'S BUILD SOMETHING EXTRAORDINARY",
-  "hashtags": ["REACTJS", "NEXTJS", "TYPESCRIPT", "NODEJS", "SQL", "MONGODB"],
+  "hashtags": ["REACTJS", "NODEJS", "SQL", "MONGODB", "FASTAPI", "GCP"],
   "personalInfo": {
     "firstName": "MOHAN",
     "lastName": "GADHAVI",
-    "location": "India"
+    "location": "Mumbai, India"
   },
   "skills": [
     {
       "category": "Frontend",
       "items": [
         "React.js",
-        "Next.js",
-        "TypeScript",
-        "JavaScript (ES6+)",
-        "Redux Toolkit",
-        "Tailwind CSS",
+        "JavaScript (ES6)",
+        "Redux",
+        "Axios",
+        "Tailwind",
+        "Bootstrap",
         "Material UI",
-        "shadcn/ui",
-        "HTML5/CSS3"
+        "HTML",
+        "CSS"
       ]
     },
     {
@@ -28,19 +28,25 @@
       "items": [
         "Node.js",
         "Express.js",
-        "RESTful APIs",
+        "REST APIs",
+        "JWT Authentication",
+        "RBAC",
         "Redis",
-        "Swagger",
-        "Postman"
+        "Python (FastAPI)"
       ]
     },
     {
       "category": "Databases",
-      "items": ["MySQL", "MongoDB"]
+      "items": ["MySQL", "MongoDB (NoSQL)"]
     },
     {
       "category": "Cloud & Tools",
-      "items": ["AWS EC2", "AWS S3", "Git", "GitHub", "Cursor IDE", "AI Tools"]
+      "items": [
+        "GCP (Cloud Functions, BigQuery, Cloud Storage)",
+        "AWS (EC2, S3)",
+        "Git",
+        "Jira"
+      ]
     }
   ],
   "experience": [
@@ -49,11 +55,10 @@
       "company": "Digital Meta Works",
       "period": "June 2024 - Present",
       "description": [
-        "Built end-to-end features for a multi-organization document management platform using React.js, Node.js, and Express.js.",
-        "Developed dynamic forms and RESTful APIs for document processing, validation, and secure file handling.",
-        "Implemented Excel generation, file uploads/downloads, and optimized performance with lazy loading and memoization.",
-        "Refactored code into scalable, reusable components and services.",
-        "Used AI-assisted development (vibe coding) to deliver features up to 10× faster while maintaining security and code quality."
+        "Contributed to the development of a large-scale corporate travel platform using React.js, implementing policy-driven booking workflows, dashboards, admin panels, and RBAC-based access control for secure user experiences.",
+        "Optimized Node.js (Express) backend services with MySQL and MongoDB, improving query performance by 35% through schema design, pagination and indexing, while enhancing frontend performance with centralized state management and lazy loading, reducing load time by 40%.",
+        "Built an AI-powered chatbot interface with real-time capabilities using HTTP streaming and voice transcription to improve user engagement and responsiveness.",
+        "Designed and implemented an Excel data processing system with dynamic querying and reporting features; integrated cloud storage and scalable file handling using secure pre-signed URL mechanisms."
       ]
     },
     {
@@ -70,17 +75,17 @@
   ],
   "projects": [
     {
-      "title": "Community Track",
-      "description": "Collaborative task and project management system designed to streamline team workflows and enhance productivity.",
+      "title": "Aspiration Trail",
+      "description": "A gamified learning platform that helps users track skill growth through structured challenges, leaderboards, and performance dashboards, encouraging consistent learning and competitive progress.",
       "tags": ["React", "Node.js", "MongoDB"],
-      "github": "https://github.com/MohanGadhavi/CommUnityTrack-ui",
+      "github": "https://github.com/MohanGadhavi/aspirationtrail-ui",
       "preview": ""
     },
     {
-      "title": "Aspiration Trail",
-      "description": "Interactive learning and growth platform fostering skill development through gamified pathways and mentorship.",
-      "tags": ["React", "Tailwind CSS", "Express"],
-      "github": "https://github.com/MohanGadhavi/aspirationtrail-ui",
+      "title": "Community Track",
+      "description": "A collaborative task management system that improves team coordination by providing role-based access, clear task visibility, and structured project tracking to reduce workflow confusion.",
+      "tags": ["React", "Node.js", "MongoDB"],
+      "github": "https://github.com/MohanGadhavi/CommUnityTrack-ui",
       "preview": ""
     }
   ],
@@ -104,7 +109,7 @@
       "description": "Recognized for rapid problem-solving, teamwork, and end-to-end development of innovative solutions."
     },
     {
-      "title": " Certified Graphic Design Intern",
+      "title": "Certified Graphic Designer",
       "description": "Elixir Digital Media - Gained practical experience in visual communication and design principles."
     }
   ],
